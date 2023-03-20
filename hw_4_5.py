@@ -8,8 +8,6 @@ from selene import browser, command, have
 
 
 def test_my_version_student_registration(browser_setup):
-    browser.config.hold_browser_open = True
-    browser.open('https://demoqa.com/automation-practice-form')
     browser.element('#firstName').type('Artem')
     browser.element('#lastName').type('Chekanov')
     browser.element('#userEmail').type('tema-42@mail.ru')
